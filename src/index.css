@@ -1,0 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: black;
+  font-family: "HelveticaMedium"
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@font-face {
+  font-family: "HelveticaRegular";
+  src: url("./assets/fonts/HelveticaNowDisplay-Regular.ttf");
+}
+
+@font-face {
+  font-family: "HelveticaMedium";
+  src: url("./assets/fonts/HelveticaNowDisplay-Medium.ttf");
+}
+
+.abril {
+  font-family: 'Abril Fatface', cursive;
+}
+.alfa {
+  font-family: 'Alfa Slab One', cursive;
+}
+.anton {
+  font-family: 'Anton', sans-serif;
+}
+.archivo {
+  font-family: 'Archivo Black', sans-serif;
+}
+.caprasimo {
+  font-family: 'Caprasimo', cursive;
+}
+.noto {
+  font-family: 'Noto Serif', serif;
+}
+.press {
+  font-family: 'Press Start 2P', cursive;
+}
+.rem {
+  font-family: 'REM', sans-serif;
+}
+.rubik {
+  font-family: 'Rubik Bubbles', cursive;
+}
+
+
+.navbar {
+  /* background-image: url("./assets/images/bg.gif"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+.hero {
+  background-image: url("./assets/images/bg3.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.metaverse {
+  /* background-image: url("./assets/images/white_wall.jpg"); */
+  background: linear-gradient(beige, #c891e5, #c891e5);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-attachment: fixed; */
+}
+
+.jnft {
+  background-image: url("./assets/images/black_wall.jpg");
+  /* background-color: black; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.news {
+  background-color: white;
+}
+
+.virtualfit {
+  background-image: url("./assets/images/virtualfit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.mobability {
+  background-image: url("./assets/images/mobility.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+@keyframes bgSlider {
+  0% {
+    background-position: 250px;
+  }
+  50% {
+    background-position: -250px;
+  }
+  100% {
+    background-position: 250px;
+  } 
+}
+
+@keyframes cartAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cardAnimation {
+  animation: infinite 10s ease-in-out cartAnim;
+}
+
+.txt {
+  background: linear-gradient(91.85deg, #ecede1 -7.75%, #cd44e5 47.47%, #ede1f0 107.63%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  /* letter-spacing: -30px; */
+
+  -webkit-transition: background 1s ease-out;  
+  -moz-transition: background 1s ease-out;  
+  -o-transition: background 1s ease-out;  
+  transition: background 1s ease-out;
+
+  animation: infinite 5s ease-in-out bgSlider;
+}
+
+
+.card-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  border: 2px solid #272727;
+  border-radius: 16px;
+  /* height: 320px; */
+  justify-content: flex-end;
+
+  overflow: hidden;
+  position: relative;
+  transition-duration: .1s;
+  transition-property: all;
+  transition-timing-function: ease;
+  width: 100%;
+
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.card-wrap:hover .bottom-wrap {
+  height: 100%;
+}
+
+
+.card-info {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 2;
+}
+
+.bottom-wrapper {
+  align-items: flex-start;
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  background: rgba(0,0,0,.475);
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: flex-start;
+  margin-top: auto;
+  padding: 15px 15px 24px;
+  position: relative;
+  transition-duration: .25s;
+  transition-property: all;
+  transition-timing-function: ease;
+  width: 100%;
+}

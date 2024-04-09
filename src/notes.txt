@@ -1,0 +1,10 @@
+font-family: 'Abril Fatface', cursive;
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Anton', sans-serif;
+font-family: 'Archivo Black', sans-serif;
+font-family: 'Caprasimo', cursive;
+font-family: 'Noto Serif', serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'REM', sans-serif;
+font-family: 'Rowdies', cursive;
+font-family: 'Rubik Bubbles', cursive;
